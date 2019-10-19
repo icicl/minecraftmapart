@@ -66,7 +66,7 @@ for i in os.listdir("./in"):
     try:
         b = Image.open("./in/"+i)
     except:
-        print(i + " is mega gay")
+        print(i + " is not recognized as a valid image.")
     b=b.crop((0,0,min(b.height,b.width),min(b.height,b.width)))
     b.thumbnail(size)
     p = b.load()
